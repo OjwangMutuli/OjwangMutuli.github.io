@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Official professional portfolio of Ojwang Hashim Mutuli - Mathematics, ICT, Data Analysis, Research and Software Development.">
+    <meta name="author" content="Ojwang Hashim Mutuli">
+
+    <title>OJWANG HASHIM MUTULI | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- PAGE LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+        <p>OJWANG HASHIM MUTULI</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">OHM</span>
+            </a>
+
+            <button id="themeToggle" class="theme-toggle"
+                    aria-label="Switch colour theme"
+                    title="Switch colour theme">
+                <i class="bi bi-moon-stars-fill"></i>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link contact-nav">Contact Me</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <!-- Animated image background -->
+        <div class="hero-background"></div>
+
+        <!-- Moving network particles -->
+        <canvas id="networkCanvas"></canvas>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content reveal">
+
+                <div class="availability">
+                    <span class="availability-dot"></span>
+                    OPEN TO OPPORTUNITIES
+                </div>
+
+                <p class="hero-intro">Greetings, I am</p>
+
+                <h1>
+                    OJWANG HASHIM
+                    <span class="hero-name">MUTULI<span class="green-text">.</span></span>
+                </h1>
+
+                <h2>
+                    I am a <span id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    A Mathematics and Information Technology graduate passionate
+                    about transforming data into insights, solving practical
+                    problems through technology, and developing digital solutions
+                    that create meaningful impact.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="#home"
+                       class="btn btn-outline"
+                       target="_blank">
+                        Request CV via Email.
+                    </a>
+                    
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/OjwangMutuli" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ojwangmutuli-hashim-46a877250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
+                       target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:ojwangmutulisnr@gmail.com" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/254745117636" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image reveal">
+
+
+                <div class="profile-frame">
+
+                    <div class="profile-decoration"></div>
+                
+                    <!-- Original photograph -->
+                    <img
+                        src="assets/images/profile.JPG"
+                        alt="Portrait of Ojwang Hashim Mutuli"
+                        id="profileSource"
+                    >
+</div>
+                
+
+                <div class="floating-card card-one">
+                    <i class="bi bi-bar-chart-line"></i>
+                    <div>
+                        <strong>Data Analysis</strong>
+                        <small>Insights & Decisions</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="bi bi-code-slash"></i>
+                    <div>
+                        <strong>Technology</strong>
+                        <small>Digital Solutions</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-indicator">
+            <span>SCROLL TO EXPLORE</span>
+            <i class="bi bi-arrow-down"></i>
+        </a>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">GET TO KNOW ME</span>
+                <h2>About <span class="green-text">Me</span></h2>
+                <p>Combining analytical thinking, technology and practical problem-solving.</p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <h3>Driven by curiosity. Powered by technology.</h3>
+
+                    <p>
+                        I am Ojwang Hashim Mutuli, a Mathematics and Information
+                        Technology graduate from Masinde Muliro University of
+                        Science and Technology.
+                    </p>
+
+                    <p>
+                        My academic background has equipped me with analytical,
+                        quantitative and computational skills. I have developed
+                        practical experience in data management, statistical
+                        analysis, ICT support, research questionnaire development
+                        and software development.
+                    </p>
+
+                    <p>
+                        I am particularly interested in using technology to
+                        improve organisational processes, support evidence-based
+                        decisions and develop solutions to real-world challenges.
+                    </p>
+
+                    <p>
+                        I value continuous learning, teamwork, professionalism
+                        and the ability to turn ideas into practical solutions.
+                    </p>
+
+                    <a href="assets/documents/Ojwang_Hashim_Mutuli_CV.pdf"
+                       class="text-link"
+                       target="_blank">
+                        View my curriculum vitae
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="about-cards reveal">
+
+                    <div class="info-card">
+                        <i class="bi bi-mortarboard"></i>
+                        <h4>Academic Background</h4>
+                        <p>BSc Mathematics with Information Technology</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h4>Data & Statistics</h4>
+                        <p>Statistical analysis, data management and visualisation</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="bi bi-laptop"></i>
+                        <h4>Information Technology</h4>
+                        <p>ICT support, troubleshooting and software development</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="bi bi-lightbulb"></i>
+                        <h4>Problem Solving</h4>
+                        <p>Analytical thinking and practical digital solutions</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">WHAT I CAN DO</span>
+                <h2>Professional <span class="green-text">Skills</span></h2>
+                <p>A combination of technical, analytical and interpersonal competencies.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="bi bi-bar-chart-line"></i></div>
+                    <h3>Data Analysis & Statistics</h3>
+                    <ul>
+                        <li>Microsoft Excel</li>
+                        <li>SPSS</li>
+                        <li>R Programming</li>
+                        <li>Data Cleaning</li>
+                        <li>Data Visualisation</li>
+                        <li>Statistical Reporting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="bi bi-code-square"></i></div>
+                    <h3>Programming & Development</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>C / C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="bi bi-pc-display"></i></div>
+                    <h3>ICT & Digital Skills</h3>
+                    <ul>
+                        <li>Microsoft Office Suite</li>
+                        <li>Computer Troubleshooting</li>
+                        <li>Data Entry</li>
+                        <li>Computer Training</li>
+                        <li>Digital Documentation</li>
+                        <li>Basic Graphic Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="bi bi-clipboard-data"></i></div>
+                    <h3>Research & Data Management</h3>
+                    <ul>
+                        <li>Questionnaire Development</li>
+                        <li>Survey Digitisation</li>
+                        <li>Research Data Management</li>
+                        <li>Data Collection</li>
+                        <li>Data Processing</li>
+                        <li>Research Reporting</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">MY PROFESSIONAL JOURNEY</span>
+                <h2>Experience & <span class="green-text">Exposure</span></h2>
+                <p>Practical experience gained through professional and project-based engagements.</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">Industrial Attachment</span>
+
+                        <h3>Kenya Agricultural and Livestock Research Organization (KALRO)</h3>
+
+                        <h4>Research, Data Management & ICT Exposure</h4>
+
+                        <p>
+                            Gained practical experience in research support,
+                            questionnaire development, information management
+                            and data-related activities.
+                        </p>
+
+                        <ul>
+                            <li>Developed a student admission survey questionnaire.</li>
+                            <li>Developed a Mathematics Department attachment feedback questionnaire.</li>
+                            <li>Participated in research and data management activities.</li>
+                            <li>Completed industrial attachment with Grade A.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">ICT Services & Training</span>
+
+                        <h3>HANDPRINTS CYBER – BUTERE</h3>
+
+                        <h4>ICT Support & Computer Training</h4>
+
+                        <p>
+                            Provided computer-related services and supported
+                            users in developing essential digital skills.
+                        </p>
+
+                        <ul>
+                            <li>Computer troubleshooting and basic technical support.</li>
+                            <li>Training 15 students in basic computer skills.</li>
+                            <li>Data entry, document preparation and digital services.</li>
+                            <li>Support in printing, scanning and office applications.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">Software Development</span>
+
+                        <h3>Marenyo Cooperative Management System</h3>
+
+                        <h4>Project Development</h4>
+
+                        <p>
+                            Designed and developed a Django-based prototype
+                            to support cooperative operations and information management.
+                        </p>
+
+                        <ul>
+                            <li>Farmer, employee, supplierd and shareholder records management.</li>
+                            <li>Milk and egg collection management.</li>
+                            <li>Farmer payment and transaction tracking.</li>
+                            <li>Inventory, stock sales and reporting modules.</li>
+                            <li>Dashboard for operational information.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">SELECTED WORK</span>
+                <h2>Projects & <span class="green-text">Portfolio</span></h2>
+                <p>Selected projects demonstrating practical application of my skills.</p>
+            </div>
+
+            <div class="project-filters reveal">
+
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="data">Data & Research</button>
+                <button class="filter-btn" data-filter="ict">ICT</button>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal" data-category="software">
+
+                    <div class="project-image project-image-one">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">SOFTWARE DEVELOPMENT</span>
+
+                        <h3>Marenyo Cooperative Management System</h3>
+
+                        <p>
+                            A Django-based management system designed to
+                            digitise cooperative operations, farmer records,
+                            milk and egg collections, payments and inventory.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Database</span>
+                        </div>
+
+                        <button class="project-details"
+                                data-title="Marenyo Cooperative Management System"
+                                data-description="A Django-based cooperative management prototype designed to improve record keeping, collection management, payment tracking, inventory management and reporting."
+                                data-tools="Python, Django, HTML, CSS, JavaScript and relational databases."
+                                data-role="System design, development, database management and implementation of core modules.">
+                            View Project Details
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal" data-category="data">
+
+                    <div class="project-image project-image-two">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">DATA ANALYSIS</span>
+
+                        <h3>Statistical Data Analysis & Visualisation</h3>
+
+                        <p>
+                            Application of statistical and analytical
+                            techniques to organise, process, interpret
+                            and communicate data.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Excel</span>
+                            <span>SPSS</span>
+                            <span>R</span>
+                        </div>
+
+                        <button class="project-details"
+                                data-title="Statistical Data Analysis & Visualisation"
+                                data-description="A collection of statistical and analytical work involving data preparation, cleaning, descriptive analysis, interpretation and visualisation."
+                                data-tools="Microsoft Excel, SPSS and R Programming."
+                                data-role="Data preparation, statistical analysis, interpretation and reporting.">
+                            View Project Details
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal" data-category="data">
+
+                    <div class="project-image project-image-three">
+                        <i class="bi bi-clipboard2-data"></i>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">RESEARCH & QUESTIONNAIRES</span>
+
+                        <h3>Research Questionnaire Development</h3>
+
+                        <p>
+                            Development and digitisation of questionnaires
+                            to support data collection, feedback and
+                            research activities.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>Data Entry</span>
+                            <span>Questionnaires</span>
+                        </div>
+
+                        <button class="project-details"
+                                data-title="Research Questionnaire Development"
+                                data-description="Questionnaire development work undertaken during industrial attachment, including a student admission survey and a Mathematics Department attachment feedback questionnaire."
+                                data-tools="Digital forms, questionnaire design and data management tools."
+                                data-role="Questionnaire design, organisation of questions and support for research data collection.">
+                            View Project Details
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal" data-category="ict">
+
+                    <div class="project-image project-image-four">
+                        <i class="bi bi-pc-display-horizontal"></i>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">ICT & DIGITAL SERVICES</span>
+
+                        <h3>Computer Training & ICT Support</h3>
+
+                        <p>
+                            Practical computer training, troubleshooting,
+                            digital documentation and support services
+                            for computer users.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>ICT Support</span>
+                            <span>Training</span>
+                            <span>Microsoft Office</span>
+                        </div>
+
+                        <button class="project-details"
+                                data-title="Computer Training & ICT Support"
+                                data-description="Practical ICT support and computer training activities at HANDPRINTS CYBER – BUTERE, including basic computer skills training for 15 students."
+                                data-tools="Windows, Microsoft Office and common computer applications."
+                                data-role="Computer troubleshooting, user support, training and digital services.">
+                            View Project Details
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">ACADEMIC BACKGROUND</span>
+                <h2>Education & <span class="green-text">Development</span></h2>
+            </div>
+
+            <div class="education-card reveal">
+
+                <div class="education-icon">
+                    <i class="bi bi-mortarboard"></i>
+                </div>
+
+                <div>
+
+                    <span class="education-date">University Education</span>
+
+                    <h3>Masinde Muliro University of Science and Technology</h3>
+
+                    <h4>Bachelor of Science in Mathematics with Information Technology</h4>
+
+                    <p>
+                        Academic training in mathematics, statistics,
+                        computing, information technology and analytical
+                        problem-solving.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">LET'S CONNECT</span>
+                <h2>Get In <span class="green-text">Touch</span></h2>
+                <p>Have an opportunity, project or professional enquiry? Let's talk.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-information reveal">
+
+                    <h3>Contact Information</h3>
+
+                    <p>
+                        I welcome professional opportunities, collaborations,
+                        research engagements and technology-related projects.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <div>
+                            <small>Email Address</small>
+                            <a href="mailto:ojwangmutulisnr@gmail.com">
+                                ojwangmutulisnr@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-linkedin"></i>
+                        <div>
+                            <small>LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/ojwangmutuli-hashim-46a877250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
+                               target="_blank">
+                                Professional Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-github"></i>
+                        <div>
+                            <small>GitHub</small>
+                            <a href="https://github.com/OjwangMutuli"
+                               target="_blank">
+                                github.com/OjwangMutuli
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-whatsapp"></i>
+                        <div>
+                            <small>WhatsApp</small>
+                            <a href="https://wa.me/254745117636"
+                               target="_blank">
+                                +254 745 117 636
+                            </a>
+                        </div>
+                    </div>                    
+                    
+                </div>
+
+
+                <div class="contact-form-container reveal">
+
+                    <form action="https://formsubmit.co/ojwangmutulisnr@gmail.com"
+                          method="POST"
+                          class="contact-form">
+
+                        <input type="hidden" name="_subject"
+                               value="New Portfolio Website Enquiry">
+
+                        <input type="hidden" name="_captcha" value="true">
+
+                        <input type="hidden" name="_template" value="table">
+
+                        <input type="hidden" name="_next"
+                               value="https://github.com/OjwangMutuli">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                       placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email"
+                                       placeholder="Enter your email" required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                   placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                      rows="6"
+                                      placeholder="Write your message..."
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message
+                            <i class="bi bi-send"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">OHM</span>
+                </span></span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Ojwang Hashim Mutuli.
+                All Rights Reserved.
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/OjwangMutuli" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ojwangmutuli-hashim-46a877250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
+                   target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:ojwangmutulisnr@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                </a>
+
+                
+                <a href="https://wa.me/254745117636"
+                    class="contact-card">
+
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <span class="section-label">PROJECT DETAILS</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <h4>Technologies / Tools</h4>
+            <p id="modalTools"></p>
+
+            <h4>My Role</h4>
+            <p id="modalRole"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

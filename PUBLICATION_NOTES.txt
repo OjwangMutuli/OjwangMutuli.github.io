@@ -1,0 +1,18 @@
+OJWANG PORTFOLIO - PUBLICATION NOTES
+
+This version keeps the existing portfolio sections and theme system.
+The profile particle animation has been temporarily disabled so the portrait
+loads as a normal optimized image on desktop, Android and iPad.
+
+Important:
+1. Upload the CONTENTS of this OJWANG_PORTFOLIO folder to the root of your
+   GitHub repository (index.html must be at repository root).
+2. The portrait path is case-sensitive: assets/images/profile.JPG.
+3. Before publishing, review every item inside assets/documents and remove
+   private certificates, ID documents, personal records or anything you do
+   not want publicly accessible.
+4. Test the contact form and verify its receiving email before advertising it.
+5. Enable GitHub Pages from Settings > Pages > Deploy from a branch > main > /(root).
+
+The particle portrait effect can be reintroduced after the live site has been
+tested on the iPad.
