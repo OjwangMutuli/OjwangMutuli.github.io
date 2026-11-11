@@ -1781,3 +1781,90 @@ html[data-theme="dark"] .contact-form-container {
 .loader {
     transition: opacity 0.35s ease, visibility 0.35s ease;
 }
+
+
+/* =========================================
+   PREMIUM 3D PROFILE FRAME ANIMATION
+   ========================================= */
+
+.profile-frame {
+    transform-style: preserve-3d;
+    will-change: transform, box-shadow;
+    animation: profileFloat 7s ease-in-out infinite,
+               profileGlow 5s ease-in-out infinite;
+    transition: transform 0.5s ease;
+}
+
+/* Gentle floating movement */
+
+@keyframes profileFloat {
+    0%, 100% {
+        transform: translateY(0) rotateY(-2deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotateY(2deg);
+    }
+}
+
+/* Emerald lighting */
+
+@keyframes profileGlow {
+    0%, 100% {
+        box-shadow:
+            0 0 25px rgba(19, 199, 122, 0.12),
+            0 0 55px rgba(19, 199, 122, 0.08);
+    }
+
+    50% {
+        box-shadow:
+            0 0 35px rgba(19, 199, 122, 0.30),
+            0 0 80px rgba(19, 199, 122, 0.18);
+    }
+}
+
+/* Photograph depth effect */
+
+.profile-frame img {
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+/* Desktop interaction */
+
+@media (hover: hover) and (pointer: fine) {
+    .profile-frame:hover {
+        transform: translateY(-5px) rotateY(0deg) scale(1.025);
+    }
+
+    .profile-frame:hover img {
+        transform: scale(1.035);
+        filter: brightness(1.06);
+    }
+}
+
+/* Slower movement on smaller screens */
+
+@media (max-width: 768px) {
+    .profile-frame {
+        animation-duration: 10s, 7s;
+    }
+}
+
+/* Respect accessibility preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .profile-frame {
+        animation: none !important;
+        transform: none !important;
+    }
+
+    .profile-frame img {
+        transition: none !important;
+    }
+
+    .profile-decoration {
+        animation: none !important;
+    }
+}
